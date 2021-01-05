@@ -2,21 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Hello, WebVR! • A-Frame</title>
-    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <title>RTO Gallery</title>
+    <meta name="description" content="RTO Gallery" />
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
   </head>
 
   <body>
     <a-scene background="color: #FAFAFA">
-      <a-entity
-        camera="active: true"
-        look-controls
-        wasd-controls
-        position="0 10 0"
-        data-aframe-default-camera
-      ></a-entity>
-
       <!-- <a-entity light="type: ambient; color: #ffffff; intensity: 5;"></a-entity>
       <a-entity
         light="type: directional;
@@ -27,7 +19,7 @@
       ></a-entity> -->
 
       <a-plane
-        position="0 0 0"
+        position="0 10 0"
         rotation="-90 0 0"
         width="10"
         height="10"
@@ -36,6 +28,7 @@
       ></a-plane>
 
       <a-gltf-model
+        position="0 10 0"
         scale="0.4 0.4 0.4"
         color="#ffffff"
         src="assets/RTOGalleryEmission.glb"
